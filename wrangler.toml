@@ -21,7 +21,6 @@ routes = [
   { pattern = "ghcr.acgmemory.eu.org", custom_domain = true },
   { pattern = "cloudsmith.acgmemory.eu.org", custom_domain = true },
   { pattern = "ecr.acgmemory.eu.org", custom_domain = true },
-  { pattern = "index.acgmemory.eu.org", custom_domain = true },
 ]
 
 [env.production.vars]
