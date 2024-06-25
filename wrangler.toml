@@ -12,15 +12,16 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "quay.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "gcr.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "k8s-gcr.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "k8s.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "ghcr.acgmemory.eu.org", custom_domain = true },
-#   { pattern = "cloudsmith.acgmemory.eu.org", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.acgmemory.eu.org", custom_domain = true },
+  { pattern = "quay.acgmemory.eu.org", custom_domain = true },
+  { pattern = "gcr.acgmemory.eu.org", custom_domain = true },
+  { pattern = "k8s-gcr.acgmemory.eu.org", custom_domain = true },
+  { pattern = "k8s.acgmemory.eu.org", custom_domain = true },
+  { pattern = "ghcr.acgmemory.eu.org", custom_domain = true },
+  { pattern = "cloudsmith.acgmemory.eu.org", custom_domain = true },
+  { pattern = "cloudsmith.acgmemory.eu.org", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
@@ -28,7 +29,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.acgmemory.eu.org", custom_domain = true }
+route = { pattern = "docker-staging.acgmemory.eu.org", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
